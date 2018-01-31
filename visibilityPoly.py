@@ -94,48 +94,6 @@ def getGuardsFromIndividual(polyPoints, guardIndividual):
 
     return vertexGuards
 
-
-#def getSightPolygon(sightX,sightY):
-    #Get all unique points
-    # points = (function(segments){
-    # var a =[];
-    # segments.forEach(function(seg)
-    # {
-    #     a.push(seg.a, seg.b);
-    # });
-    # return a;
-    # })(segments);
-    # var
-    # uniquePoints = (function(points){
-    # var
-    # set = {};
-    # return points.filter(function(p)
-    # {
-    #     var
-    # key = p.x + "," + p.y;
-    # if (key in set)
-    # {
-    # return false;
-    # } else {
-    # set[key] = true;
-    # return true;
-    # }
-    # });
-    # })(points);
-    #
-    # # Get all angles
-    # var
-    # uniqueAngles = [];
-    # for (var j=0;j < uniquePoints.length;j++)
-    # {
-    #     var
-    # uniquePoint = uniquePoints[j];
-    # var
-    # angle = Math.atan2(uniquePoint.y - Mouse.y, uniquePoint.x - Mouse.x);
-    # uniquePoint.angle = angle;
-    # uniqueAngles.push(angle - 0.00001, angle, angle + 0.00001);
-    # }
-
 def getIntersection(ray, segment):
     # RAY in parametric: Point + Delta * T1
     r_px = float(ray.a.x)
