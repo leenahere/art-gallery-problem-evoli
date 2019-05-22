@@ -56,16 +56,11 @@ def draw(points):
    imPxAccess = im.load()
    draw = ImageDraw.Draw(im)
    tupVerts = list(map(tuple,points))
-   
-   # either use .polygon(), if you want to fill the area with a solid colour
-   #draw.polygon( tupVerts, outline=black,fill=white )
-   
-   # or .line() if you want to control the line thickness, or use both methods together!
+
    draw.line( tupVerts+[tupVerts[0]], width=1, fill=black )
    
    im.show()
-   
-   return
+
    
 def clip(x, min, max) :
    if( min > max ) :  return x    
@@ -74,4 +69,6 @@ def clip(x, min, max) :
    else :             return x
    
 if __name__ == "__main__":
-   generatePolygon()
+    generatePolygon()
+   #poly = generatePolygon(600, 600, 400, 4, 0.1, 30)
+   #print(poly)

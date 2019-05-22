@@ -1,6 +1,5 @@
 import random
 from collections import namedtuple
-
 import math
 from PIL import ImageDraw, Image
 

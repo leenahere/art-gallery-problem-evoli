@@ -1,4 +1,4 @@
-from visibilityPoly2 import *
+from visibilityPoly import *
 from initialPopulation import generateInitialPopulation
 from initialPopulation import *
 
